@@ -17,7 +17,6 @@ class Main2Activity : AppCompatActivity() {
 
 
         rec_view.layoutManager = LinearLayoutManager(this)
-
         //rec_view.layoutManager = GridLayoutManager(this, 2)
 
         rec_view.adapter = MyAdapter(l, this)
