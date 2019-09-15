@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.element.view.*
 
@@ -15,6 +16,9 @@ class MyAdapter(val items : ArrayList<String>, val context: Context) : RecyclerV
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.element.text = items.get(position)
+        holder.button3.setOnClickListener {
+            holder.element.text="123"
+        }
     }
 
     // Gets the number of animals in the list
@@ -23,8 +27,8 @@ class MyAdapter(val items : ArrayList<String>, val context: Context) : RecyclerV
     }
 
     class ViewHolder (view: View) : RecyclerView.ViewHolder(view) {
-        // Holds the TextView that will add each animal to
         val element = view.element
+        val button3 = view.button3
     }
 }
 

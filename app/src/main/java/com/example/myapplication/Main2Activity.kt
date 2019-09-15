@@ -2,9 +2,12 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main2.*
+import kotlinx.android.synthetic.main.element.*
 
 class Main2Activity : AppCompatActivity() {
 
@@ -18,10 +21,12 @@ class Main2Activity : AppCompatActivity() {
 
         rec_view.layoutManager = LinearLayoutManager(this)
 
-        //rec_view.layoutManager = GridLayoutManager(this, 2)
-
         rec_view.adapter = MyAdapter(l, this)
 
+    }
+
+    fun onClickTest(view: View) {
+        Toast.makeText(this, element.text.toString(), Toast.LENGTH_SHORT).show()
     }
 }
 

@@ -12,11 +12,12 @@
         android:layout_height="52dp"
         android:layout_marginTop="236dp"
         android:onClick="ButtonOnClock"
-        android:text="Button"
+        android:text="Open list"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
 
     <Button
         android:onClick="onClickBtn2"

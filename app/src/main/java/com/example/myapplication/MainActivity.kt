@@ -21,10 +21,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickBtn2(view: View){
-        var i:Int=0;
-        while(i<Integer.parseInt(count_eter.text.toString())) {
-            i++
-        }
         Toast.makeText(this, "123", Toast.LENGTH_SHORT).show()
     }
+
+
 }
